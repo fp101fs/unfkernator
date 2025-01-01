@@ -27,6 +27,9 @@ A simple Python tool to convert Vectornator files (.vectornator) to standard SVG
 
 ```bash
 python vtosvg.py myfile.vectornator
+```
+Also try these:
+```bash
 python vtosvg_special.py myfile.vectornator
 python vtosvg_img.py myfile.vectornator
 ```
