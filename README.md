@@ -1,2 +1,2 @@
-# unfkernator
-Unfk your .vectornator files (convert .vectornator to SVG for free!)
+# vectornator-to-svg
+Convert your .vectornator files to SVG for free!  Save your lost art like I did with mine!
