@@ -31,23 +31,116 @@ python vtosvg.py myfile.vectornator
 
 No additional dependencies required - just Python 3.x!
 
-## 📖 Usage
+# 🎨 Vectornator to SVG Converter
+Convert your .vectornator files to SVG for free! Save your lost art like I did with mine!
 
-### Basic Usage
+## 📦 Script Components
 
-Convert a single file:
+### vtosvg.py - Main Conversion Script
+The primary script for converting Vectornator files to SVG format.
+
+**Purpose:**
+- Handles the main conversion process
+- Manages layer organization
+- Preserves SVG structure and attributes
+- Supports Inkscape-compatible output
+
+**Example:**
 ```bash
-python vtosvg.py myfile.vectornator
+python vtosvg.py design.vectornator
+# Creates design.svg with preserved layers and attributes
 ```
 
-This will create `myfile.svg` in the same directory.
-(The output SVG files are optimized for Inkscape and other leading SVG editors / viewers)
-
-### Specify Output File
-
+**Usage:**
 ```bash
+# Basic conversion
+python vtosvg.py input.vectornator
+
+# Specify output file
 python vtosvg.py input.vectornator output.svg
 ```
+
+### vtosvg_special.py - Special Elements Handler
+This is an experimental script!  This script was created to try to recover some of the elements of my more "complex" sketches in Vectornator / Linearity Curve. 
+ This script handles complex Vectornator elements and features than the vtosvg.py script.
+
+**Purpose:**
+- Processes compound paths
+- Handles gradients
+- Manages special color formats
+- Processes complex transformations
+
+**Example:**
+```bash
+python vtosvg_special.py complex_design.vectornator
+# Handles special elements like gradients and compounds
+```
+
+### vtosvg_img.py - Image Data Extraction & Analysis Tool
+Analyzes and extracts image components from Vectornator files.
+
+**Purpose:**
+- Identifies embedded images
+- Extracts thumbnail data
+- Analyzes .dat files for image content
+- Saves extracted images
+
+**Example:**
+```bash
+python vtosvg_img.py design_with_images.vectornator
+# Extracts and saves images as separate files
+```
+
+**Usage:**
+```bash
+python vtosvg_img.py input.vectornator
+# Creates:
+# - input_thumbnail.png
+# - input_image1.png
+# - input_image2.png (if multiple images exist)
+```
+
+### vtosvg_utils.py - Utility Functions (not intended for direct use - this is a "helper" script for vtosvg.py)
+A collection of helper functions for SVG processing and conversion.
+
+**Purpose:**
+- Color conversion (HSB to RGB)
+- Path data processing
+- Style handling
+- Compound path processing
+- Image element handling
+
+**Example:**
+```python
+from vtosvg_utils import convert_nodes_to_path_data, hsb_to_rgb
+
+# Convert HSB color to RGB
+rgb_color = hsb_to_rgb(0.5, 0.8, 1.0)  # Returns "rgb(51,255,255)"
+
+# Process path nodes
+path_data = convert_nodes_to_path_data(nodes)
+```
+
+## 🚀 Quick Start
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/vectornator-to-svg.git
+```
+
+2. Convert a file:
+```bash
+python vtosvg.py your_design.vectornator
+```
+
+## 📋 Requirements
+- Python 3.x
+- No additional dependencies required
+
+## ⚠️ Known Issues
+- Some gradient effects may not convert perfectly
+- Text elements are converted to paths
+- Complex effects might require manual adjustment
 
 ### Batch Processing
 
