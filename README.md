@@ -17,13 +17,19 @@ A simple Python tool to convert Vectornator files (.vectornator) to standard SVG
 
 ## 🚀 Installation
 
-1. Clone this repository:
+1. Go to the [Releases](https://github.com/fp101fs/vectornator-to-svg/releases/latest) tab for vectornator-to-svg
+
+2. Download the ZIP file
+
+3. Extract the ZIP file
+
+4. Convert vectornator to svg by using the basic syntax below:
+
 ```bash
-git clone https://github.com/yourusername/vtosvg.git
-cd vtosvg
+python vtosvg.py myfile.vectornator
 ```
 
-2. No additional dependencies required - just Python 3.x!
+No additional dependencies required - just Python 3.x!
 
 ## 📖 Usage
 
@@ -31,10 +37,10 @@ cd vtosvg
 
 Convert a single file:
 ```bash
-python vtosvg.py input.vectornator
+python vtosvg.py myfile.vectornator
 ```
 
-This will create `input.svg` in the same directory.
+This will create `myfile.svg` in the same directory.
 (The output SVG files are optimized for Inkscape and other leading SVG editors / viewers)
 
 ### Specify Output File
