@@ -1,5 +1,5 @@
 # .vectornator-to-svg
-Convert your .vectornator files to SVG for free!  Save your lost art like I did with mine!
+Convert your .vectornator files to SVG for free!  Save your lost art like I did!
 This repository is a work-in-progress.  There are known issues.  Please help me make this better.  Just drop the scripts into Claude.ai!
 
 # 🎨 Vectornator to SVG Converter
