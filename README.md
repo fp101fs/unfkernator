@@ -21,12 +21,12 @@ A simple Python tool to convert Vectornator files (.vectornator) to standard SVG
 
 2. In the Assets section, click on vectornator-to-svg-vXYZ.zip to Download the ZIP file
 
-3. Extract the ZIP file
+3. Extract the ZIP file to your Desktop
 
-4. Open the Terminal and Run the command below (but replace myfile.vectornator with your File name):
+4. Open the Terminal and Run the command below (but replace myfile.vectornator with your File name & full path - ex: ~/Desktop/myfile.vectornator):
 
 ```bash
-python vtosvg.py myfile.vectornator
+python ~/Desktop/vtosvg.py ~/Desktop/myfile.vectornator
 ```
 Also try these:
 ```bash
