@@ -17,7 +17,7 @@ A simple Python tool to convert Vectornator files (.vectornator) to standard SVG
 
 ## 🚀 Installation
 
-1. Go to the [Releases](https://github.com/fp101fs/vectornator-to-svg/releases/latest) tab for vectornator-to-svg
+1. Go to the [latest Release](https://github.com/fp101fs/vectornator-to-svg/releases/latest) tab
 
 2. Download the ZIP file
 
