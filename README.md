@@ -23,7 +23,7 @@ A simple Python tool to convert Vectornator files (.vectornator) to standard SVG
 
 3. Extract the ZIP file
 
-4. Convert vectornator to svg by using the basic syntax below:
+4. Convert .vectornator files to svg by using the basic syntax below:
 
 ```bash
 python vtosvg.py myfile.vectornator
@@ -44,7 +44,7 @@ Convert your .vectornator files to SVG for free! Save your lost art like I did w
 
 ## 📦 Script Components
 
-### vtosvg.py - Main Conversion Script
+### 🟢 vtosvg.py - Main Conversion Script
 The primary script for converting Vectornator files to SVG format.
 
 **Purpose:**
@@ -68,7 +68,7 @@ python vtosvg.py input.vectornator
 python vtosvg.py input.vectornator output.svg
 ```
 
-### vtosvg_special.py - Special Elements Handler
+### 🟢 vtosvg_special.py - Special Elements Handler
 This is an experimental script!  This script was created to try to recover some of the elements of my more "complex" sketches in Vectornator / Linearity Curve. 
  This script handles complex Vectornator elements and features than the vtosvg.py script.
 
@@ -84,7 +84,7 @@ python vtosvg_special.py complex_design.vectornator
 # Handles special elements like gradients and compounds
 ```
 
-### vtosvg_img.py - Image Data Extraction & Analysis Tool
+### 🟢 vtosvg_img.py - Image Data Extraction & Analysis Tool
 Analyzes and extracts image components from Vectornator files.
 
 **Purpose:**
@@ -108,7 +108,7 @@ python vtosvg_img.py input.vectornator
 # - input_image2.png (if multiple images exist)
 ```
 
-### vtosvg_utils.py - Utility Functions (not intended for direct use - this is a "helper" script for vtosvg.py)
+### 🟢 vtosvg_utils.py - Utility Functions (not intended for direct use - this is a "helper" script for vtosvg.py)
 A collection of helper functions for SVG processing and conversion.
 
 **Purpose:**
