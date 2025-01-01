@@ -27,9 +27,17 @@ A simple Python tool to convert Vectornator files (.vectornator) to standard SVG
 
 ```bash
 python vtosvg.py myfile.vectornator
+python vtosvg_special.py myfile.vectornator
+python vtosvg_img.py myfile.vectornator
 ```
 
-No additional dependencies required - just Python 3.x!
+Yes - I recommend you try all scripts above on your file(s) - because each script does a different thing (see detailed file structure and purposes below)
+
+For example, vtosvg.py might convert your file(s) with no issues.  
+But if not, then vtosvg_special.py might do it.  
+And last but not least, vtosvg_img.py should extract any "image" layers from your .vectornator files (for example - a sketch you snapped a photo of and then used Vectornator's Auto-Trace feature).
+
+No additional dependencies required - just Python 3.x!  Intended to be cross-platform.
 
 # 🎨 Vectornator to SVG Converter
 Convert your .vectornator files to SVG for free! Save your lost art like I did with mine!
