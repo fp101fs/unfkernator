@@ -23,15 +23,15 @@ A simple Python tool to convert Vectornator files (.vectornator) to standard SVG
 
 3. Extract the ZIP file to your Desktop
 
-4. Open the Terminal and Run the command below (but replace myfile.vectornator with your File name & full path - ex: ~/Desktop/myfile.vectornator):
+4. Open the Terminal and Run the command below (but replace fuklinearity.vectornator with your File name & full path - ex: ~/Desktop/fuklinearity.vectornator):
 
 ```bash
-python ~/Desktop/vtosvg.py ~/Desktop/myfile.vectornator
+python ~/Desktop/vtosvg.py ~/Desktop/fuklinearity.vectornator
 ```
 Also try these:
 ```bash
-python vtosvg_special.py myfile.vectornator
-python vtosvg_img.py myfile.vectornator
+python vtosvg_special.py fuklinearity.vectornator
+python vtosvg_img.py fuklinearity.vectornator
 ```
 
 Yes - I recommend you try all scripts above on your file(s) - because each script does a different thing (see detailed file structure and purposes below)
